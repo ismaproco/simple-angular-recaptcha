@@ -2,9 +2,10 @@
   "name": "simple-angular-recaptcha",
   "version": "1.0.0",
   "description": "Angular recaptcha directive",
-  "main": "index.js",
+  "main": "simple-angular-recaptcha.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "concat": "concat-cli -f src/recaptcha.js src/recaptcha.directive.js src/recaptcha.service.js -o simple-angular-recaptcha.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
     "recaptcha"
   ],
   "author": "ismapro",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "concat-cli": "^4.0.0"
+  }
 }
